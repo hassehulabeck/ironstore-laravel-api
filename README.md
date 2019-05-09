@@ -1,8 +1,8 @@
-#En liten api i Laravel
+# En liten api i Laravel
 
-##Ironstore
+## Ironstore
 
-###En övning för FED18G@MI
+### En övning för FED18G@MI
 
 Klona den, kör sedan 
 ```npm install``` 
@@ -22,7 +22,7 @@ Sedan bör den gå att köra.
 
 (Om du får massa problem med npm run dev/watch på Windows, så starta om. Det hjälpte mig vid relativt oförklarliga fel.)
 
-###Databaskrav
+### Databaskrav
 I den här appen använder jag en databas som heter 
 products
 och som innehåller en table med samma namn.
@@ -34,7 +34,7 @@ Kör sedan
 ```php artisan db:seed``` 
 för att "befolka" databasen med lite värden.
 
-###Innehåller Vue-komponent
+### Innehåller Vue-komponent
 Kika på 
 ```resources/js/components/ExampleComponent```
 för att se hur en Vue-component kan samverka med Laravel.
