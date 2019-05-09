@@ -17,19 +17,19 @@ Därefter är det bra att köra
 ```npm run watch``` 
 eller 
 ```npm run dev```
-för att få allt att ligga rätt (webpack-mässigt)
+för att få allt att ligga rätt (webpack-mässigt).
 Sedan bör den gå att köra.
 
 (Om du får massa problem med npm run dev/watch på Windows, så starta om. Det hjälpte mig vid relativt oförklarliga fel.)
 
 ### Databaskrav
 I den här appen använder jag en databas som heter 
-products
+**products**
 och som innehåller en table med samma namn.
 Skapa därför en egen databas med det namnet 
 och kör sedan 
 ```php artisan migrate```
-för att skapa nödvändiga tabeller
+för att skapa nödvändiga tabeller.
 Kör sedan
 ```php artisan db:seed``` 
 för att "befolka" databasen med lite värden.
