@@ -40,9 +40,10 @@ Kika på
 för att se hur en Vue-component kan samverka med Laravel.
 
 ### Intressanta adresser
-```localhost``` = Visar en komponent som hämtar en produkt med id:34. Ändra om du behöver.
-```localhost/api/products``` = Visar json-utskrift av alla produkter.
-```localhost/api/products/{id}``` = Visar produkten med detta id-nummer.
+* ```localhost``` Visar en komponent som hämtar en produkt med id:34. Ändra om du behöver.
+* ```localhost/api/products``` Visar json-utskrift av alla produkter.
+* ```localhost/api/products/{id}``` Visar produkten med detta id-nummer.
+
 (Glöm inte att justera med ev port efter localhost, ex "localhost:8080")
 
 Mycket nöje.
