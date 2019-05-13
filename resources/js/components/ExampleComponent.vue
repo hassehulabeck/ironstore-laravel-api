@@ -6,7 +6,7 @@
                     <div class="card-header">Lundströms järn</div>
 
                     <div class="card-body">
-                    Här är en spännande produkt.
+                    Här är en spännande produkt med id 34.
                     <p>{{ prodName }}</p>
                         
                     </div>

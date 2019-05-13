@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Car;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class CarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::all();
+        //
     }
 
     /**
@@ -24,7 +24,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('addProduct');
+        //
     }
 
     /**
@@ -35,33 +35,27 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $product = Product::create([
-            'name' => $request->name,
-            'price' => $request->price,
-            'maker' => $request->maker
-        ]);
-        return redirect('api/products');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Product  $product
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Car $car)
     {
-        $prod = Product::find($product);
-        return $prod;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Product  $product
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Car $car)
     {
         //
     }
@@ -70,10 +64,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Product  $product
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, Car $car)
     {
         //
     }
@@ -81,10 +75,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Product  $product
+     * @param  \App\Car  $car
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(Car $car)
     {
         //
     }

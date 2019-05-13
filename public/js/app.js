@@ -37108,7 +37108,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _vm._v(
-              "\n                Här är en spännande produkt.\n                "
+              "\n                Här är en spännande produkt med id 34.\n                "
             ),
             _c("p", [_vm._v(_vm._s(_vm.prodName))])
           ])
