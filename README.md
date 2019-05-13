@@ -13,6 +13,10 @@ kopiera filen `.env.example` till `.env`
 och 
 fyll i dina uppgifter.
 
+Du kan också behöva generera en key till din Laravel-applikation
+``` php artisan key:generate ```
+(Normalt görs det automatiskt när du skapar ett projekt, men alltså inte när du klonar ett befintligt.)
+
 Därefter är det bra att köra
 ```npm run watch``` 
 eller 
@@ -33,6 +37,7 @@ för att skapa nödvändiga tabeller.
 Kör sedan
 ```php artisan db:seed``` 
 för att "befolka" databasen med lite värden.
+
 
 ### Innehåller Vue-komponent
 Kika på 
