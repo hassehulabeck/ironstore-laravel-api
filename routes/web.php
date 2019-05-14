@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/secret', 'HomeController@secret');
+
 Route::get('/addProduct', 'ProductController@create');
 
 Route::get('/persons', 'PersonController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

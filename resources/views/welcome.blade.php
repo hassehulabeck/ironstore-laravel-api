@@ -83,7 +83,9 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                @can('superUsers-only')
+                    <a href="{{ url('/secret') }}">Skyddad sida</a>
+                @endcan
                 <example-component>
                 </example-component>
 
