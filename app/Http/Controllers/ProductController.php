@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
+
 
 class ProductController extends Controller
 {
@@ -14,7 +18,16 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::all();
+        // Med Modellen
+        // return Product::all();
+
+        // Eller via Query builder
+        $someProducts = DB::table('products')
+            ->select(DB::raw('price, name'))
+            ->where('price', '>', 60)
+            ->orderBy('price', 'desc')
+            ->get();
+        return $someProducts;
     }
 
     /**
@@ -35,6 +48,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+
+        $this->authorize(Product::class);
+
         $product = Product::create([
             'name' => $request->name,
             'price' => $request->price,
